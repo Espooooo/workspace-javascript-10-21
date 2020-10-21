@@ -288,15 +288,19 @@
                         case "warm":
                             bcolor = "green";
                             break;
+                        case "hot";
+                            bcolor = "red"
+                            break;
                         default:
                             bcolor = "white";
                     }
                     
                     // use style object directly
-                  // document.body.style.backgroundColor = bcolor;
+                   //document.body.style.backgroundColor = bcolor;
                      
                     
                     // Or set attribute
+                    document.body.setAttribute('style', "background-color: "+bcolor);
                     document.body.setAttribute('style', "background-color: "+bcolor);
                 }
           
